@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: heroku_32fa4417174cf1b
-  username: b3b563a6539487
+  database: heroku_9e81e70f886270
+  username: bc38da6af435c3
   password: <%= ENV['BLUEMS_DATABASE_PASSWORD'] %>
