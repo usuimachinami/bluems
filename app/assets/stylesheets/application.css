@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Regular'), url('./font/AvenirNextLTPro-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro Ultra Light Condensed Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Ultra Light Condensed Italic'), url('./font/AvenirNextLTPro-UltLtCnIt.woff') format('woff');
+}
+body {
+    /* 画像ファイルの指定 */
+    background-image: url(/images/background02.jpg);
+
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #464646;
+
+    font-family:'Avenir Next LT Pro Regular';
+
+    color: white;
+}
+.wrapper {
+    margin-bottom: 100px;
+    padding: 10px;
+}
+.wrapper .content .logo {
+    text-align: center;
+    cursor: pointer;
+    padding: 250px 0 250px;
+}
+.wrapper .content .logo img {
+    width: 80%;
+}
+.wrapper .content .schedule {
+    height:	50%;
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+}
+.wrapper .content .schedule dl {
+    color: #525252;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    background-color: rgba(200,200,200,0.9);
+    border-radius: 80px;
+    opacity: 0.5;
+    padding: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.wrapper .content .schedule dl:hover {
+    opacity: 1;
+}
+.wrapper .content .schedule dd p {
+    line-height: 1.6em;
+}
+.wrapper .content .sns {
+    text-align: center;
+    margin-top: 100px;
+}
+.wrapper .content .sns dl {
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 40%;
+    min-width: 260px;
+}
+.wrapper .content .sns dl:hover {
+    border-bottom: 1px solid white;
+}
+.wrapper .content .sns dl a,
+.wrapper .content .sns dl a:visited,
+.wrapper .content .sns dl a:hover,
+.wrapper .content .sns dl a:link {
+    color: white;
+}
+.wrapper .content .sns dl dd i {
+    color: #e3e3e3;
+    position: relative;
+    top: -17px;
+    margin-right: 10px;
+}
+.wrapper .content .sns dl dd .fa-facebook {
+    top: -20px;
+}
+.wrapper .content .sns .mail-address {
+    font-family:'Avenir Next LT Pro Ultra Light Condensed Italic';
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #e3e3e3;
+}
+footer .copyright {
+    text-align: center;
+}
+footer .copyright img {
+    width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+    body {background:none} /*PC用の背景はオフ*/
+    body::before {
+        content:"";
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:100vh;
+        background:url(/images/background04.jpg) center/cover no-repeat; /*fixedをトル！*/
+        -webkit-background-size:cover;/*Android4*/
+    }
+    .wrapper .content .schedule dl {
+        width: 67%;
+        opacity: 1;
+    }
+    footer .copyright img {
+        width: 100%;
+    }
+}
