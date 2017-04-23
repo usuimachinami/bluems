@@ -18,13 +18,13 @@
     font-family: 'Avenir Next LT Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Regular'), url('./font/AvenirNextLTPro-Regular.woff') format('woff');
+    src: local('Avenir Next LT Pro Regular'), url('/font/AvenirNextLTPro-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Avenir Next LT Pro Ultra Light Condensed Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Ultra Light Condensed Italic'), url('./font/AvenirNextLTPro-UltLtCnIt.woff') format('woff');
+    src: local('Avenir Next LT Pro Ultra Light Condensed Italic'), url('/font/AvenirNextLTPro-UltLtCnIt.woff') format('woff');
 }
 body {
     /* 画像ファイルの指定 */
@@ -60,6 +60,14 @@ body {
 }
 .wrapper .content .logo img {
     width: 80%;
+}
+.wrapper .content .logo img:hover {
+    cursol: pointer;
+}
+.wrapper .content .youtube {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 .wrapper .content .schedule {
     height:	50%;
@@ -153,3 +161,15 @@ footer .copyright img {
         width: 100%;
     }
 }
+
+/*動画部分*/
+.big-background {
+    z-index:550;
+    text-align:center;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+    background-position:center bottom;
+}
+
+

@@ -16,17 +16,19 @@
 //= require_tree .
 
 $(document).ready(function(){
-    var scrolled = false;
-    $(window).scroll(function(){
-        scrolled = true;
-    })
 
-    setTimeout(function(){
-        var scheduleTop = $('.schedule').offset().top;
-        if(scrolled == false){
-            $("html,body").animate({scrollTop:scheduleTop}, "slow", "swing");
+    $('.logo').on('click', function(){
+        var youtubeTop = $('.youtube').offset().top;
+        $("html,body").animate({scrollTop:youtubeTop}, "slow", "swing");
+    });
+    $('.wrapper .content .logo img').hover(
+        function(){
+            $(this).animate({width: '85%'}, "slow", "swing");
+        },
+        function(){
+            $(this).animate({width: '80%'}, "slow", "swing");
         }
-    },2000)
+    );
 
     var windowHeight	= $(window).height();
     var logoHeight		= $('.logo').height();
