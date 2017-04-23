@@ -153,6 +153,9 @@ footer .copyright img {
         background:url(/images/background04.jpg) center/cover no-repeat; /*fixedをトル！*/
         -webkit-background-size:cover;/*Android4*/
     }
+    .wrapper .content .youtube iframe {
+        width: 100%;
+    }
     .wrapper .content .schedule dl {
         width: 67%;
         opacity: 1;
