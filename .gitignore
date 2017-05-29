@@ -43,3 +43,6 @@ docker-compose.yml
 
 ### IDE ###
 .idea/
+
+### local files ###
+.DS_Store
