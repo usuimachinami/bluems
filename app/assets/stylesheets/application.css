@@ -64,6 +64,9 @@ body {
 .wrapper .content .logo img:hover {
     cursol: pointer;
 }
+.wrapper .content .news {
+    text-align: center;
+}
 .wrapper .content .youtube {
     text-align: center;
     padding-top: 50px;
@@ -153,6 +156,13 @@ footer .copyright img {
         background:url(/images/background04.jpg) center/cover no-repeat; /*fixedをトル！*/
         -webkit-background-size:cover;/*Android4*/
     }
+    .sp {
+        display: none;
+    }
+    .wrapper .content .news p {
+        max-width: 80%;
+        margin: auto;
+    }
     .wrapper .content .youtube iframe {
         width: 100%;
     }
@@ -174,5 +184,3 @@ footer .copyright img {
     overflow:hidden;
     background-position:center bottom;
 }
-
-
