@@ -32,6 +32,6 @@ $(document).ready(function(){
 
     var windowHeight	= $(window).height();
     var logoHeight		= $('.logo').height();
-    var padding = (windowHeight - logoHeight) / 2;
+    var padding = (windowHeight - logoHeight) * 3 / 5;
     $('.logo').css({'padding-top':padding, 'padding-bottom':padding});
-})
+});

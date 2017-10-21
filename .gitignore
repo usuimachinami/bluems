@@ -43,6 +43,8 @@ docker-compose.yml
 
 ### IDE ###
 .idea/
+*.iml
 
 ### local files ###
 .DS_Store
+bluems.iml
