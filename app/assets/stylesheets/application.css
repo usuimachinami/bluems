@@ -159,6 +159,10 @@ footer .copyright img {
     .sp {
         display: none;
     }
+    .wrapper .content .logo img {
+        display: inline-block;
+        width: 80%;
+    }
     .wrapper .content .news p {
         max-width: 80%;
         margin: auto;
