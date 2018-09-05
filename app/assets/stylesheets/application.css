@@ -87,6 +87,8 @@ body {
 .wrapper .content .news .release-video {
     width: 560px;
     height: 315px;
+    margin: 10px auto;
+    display: block;
 }
 .wrapper .content .youtube {
     text-align: center;
