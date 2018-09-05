@@ -68,6 +68,7 @@ body {
     cursor: pointer;
 }
 .wrapper .content .news {
+    width: 60%;
     text-align: left;
     padding: 60px;
     color: #525252;
@@ -77,6 +78,11 @@ body {
     margin-top: 10px;
     margin-right: 10px;
     vertical-align: top;
+}
+.wrapper .content .news img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
 }
 .wrapper .content .youtube {
     text-align: center;
@@ -181,6 +187,9 @@ footer .copyright img {
     .wrapper .content .news {
         text-align: left;
         padding: 0;
+    }
+    .wrapper .content .news img {
+        width: 100%;
     }
     .wrapper .content .news p {
         max-width: 80%;
