@@ -119,8 +119,12 @@ body {
     line-height: 1.6em;
 }
 .wrapper .content .sns {
+    width: 400px;
     text-align: center;
     margin-top: 100px;
+    background-color: gray;
+    opacity: 0.9;
+    border-radius: 15px;
 }
 .wrapper .content .sns dl {
     display: block;
@@ -185,6 +189,7 @@ footer .copyright img {
         width: 80%;
     }
     .wrapper .content .news {
+        width: 100%;
         text-align: left;
         padding: 0;
     }
@@ -201,6 +206,9 @@ footer .copyright img {
     .wrapper .content .schedule dl {
         width: 67%;
         opacity: 1;
+    }
+    .wrapper .content .sns {
+        width: 100%;
     }
     footer .copyright img {
         width: 100%;
