@@ -84,6 +84,10 @@ body {
     margin: 0 auto;
     display: block;
 }
+.wrapper .content .news .release-video {
+    width: 560px;
+    height: 315px;
+}
 .wrapper .content .youtube {
     text-align: center;
     padding-top: 50px;
@@ -195,6 +199,10 @@ footer .copyright img {
     }
     .wrapper .content .news img {
         width: 100%;
+    }
+    .wrapper .content .news .release-video {
+        width: 300px;
+        height: 300px;
     }
     .wrapper .content .news p {
         max-width: 80%;
