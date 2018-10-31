@@ -21,17 +21,22 @@ $(document).ready(function(){
         var youtubeTop = $('.youtube').offset().top;
         $("html,body").animate({scrollTop:youtubeTop}, "slow", "swing");
     });
-    $('.wrapper .content .logo img').hover(
-        function(){
-            $(this).animate({width: '85%'}, "slow", "swing");
-        },
-        function(){
-            $(this).animate({width: '80%'}, "slow", "swing");
-        }
-    );
 
     var windowHeight	= $(window).height();
     var logoHeight		= $('.logo').height();
     var padding = (windowHeight - logoHeight) * 3 / 5;
     $('.logo').css({'padding-top':padding, 'padding-bottom':padding});
+
+    var now = new Date();
+    var publish = new Date('2018/11/01 20:00');
+    if (now.getTime() >= publish.getTime()) {
+        $("body").addClass("newbody");
+        var windowWidth = window.innerWidth;
+        if (windowWidth > 480) {
+            $(".newbody").css({"background-image": "url(/images/Bluems_Asya2018.jpg)"});
+        }
+        $(".logo.new").show();
+        $(".logo.old").hide();
+        $(".news").show();
+    }
 });
