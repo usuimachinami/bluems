@@ -188,7 +188,7 @@ footer .copyright img {
         -webkit-background-size:cover;/*Android4*/
     }
     .newbody::before {
-        background:url(/images/dark_artist.jpg) center/cover no-repeat;
+        background:url(/images/dark_poster.jpg) center/cover no-repeat;
     }
     .sp {
         display: none;
