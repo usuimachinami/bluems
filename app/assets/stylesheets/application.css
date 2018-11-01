@@ -79,6 +79,24 @@ body {
     margin-right: 10px;
     vertical-align: top;
 }
+.wrapper .content .news dt {
+    font-size: 20px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    margin: 0 auto 25px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 80%;
+    text-align: center;
+}
+.wrapper .content .news dd .description {
+    text-align: center;
+}
+.wrapper .content .news dd .songlist {
+    display: flex;
+    justify-content: center;
+}
 .wrapper .content .news img {
     width: 70%;
     margin: 0 auto;
@@ -107,8 +125,6 @@ body {
     margin-bottom: 10px;
 }
 .wrapper .content .schedule dt {
-    line-height: 15px;
-    font-size: 15px;
     border-bottom-color: black;
     border-bottom-style: solid;
     border-bottom-width: thin;
