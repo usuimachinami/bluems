@@ -103,20 +103,44 @@ body {
 }
 .wrapper .content .schedule .flyer img {
     width: 90%;
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+.wrapper .content .schedule dt {
+    line-height: 15px;
+    font-size: 15px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    margin: 0 auto 25px;
+    padding-bottom: 10px;
+    width: 80%;
+}
+.wrapper .content .schedule dt date {
+    font-size: 20px;
+}
+hr.dots {
+    border-width: 0 0 4px;
+    border-style: solid;
+    border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
 }
 .wrapper .content .schedule dl {
     color: #525252;
-    display: inline-block;
-    height: 250px;
-    width: 250px;
+    display: block;
+    height: auto;
+    width: 400px;
     background-color: rgba(200,200,200,0.9);
     border-radius: 80px;
     opacity: 0.5;
     padding: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 10px auto;
     vertical-align: top;
+}
+.wrapper .content .schedule dl .top {
+    text-align: left;
+}
+.wrapper .content .schedule dl .bottom {
+    text-align: right;
 }
 .wrapper .content .schedule dl:hover {
     opacity: 1;
